@@ -188,22 +188,23 @@ footer {
 
 /* The media query */
 
-@media (min-width: 600px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) {
   #div1 {
-    font-size: 25px;
+    font-size: 20px;
     margin: 1% 4%;
-    padding-right: 50%;
+    padding-right: 40%;
   }
 
   #div2 {
     font-size: 15px;
     margin: 1% 8%;
-    padding-left: 45%;
+    padding-left: 40%;
+    margin-top: 15%;
     color: black;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   #projects {
     display: grid;
     height: 100%;
@@ -222,7 +223,7 @@ footer {
   }
 
   #div1 {
-    font-size: 20px;
+    font-size: 16px;
     margin: 1% 4%;
     padding-right: 50%;
   }
