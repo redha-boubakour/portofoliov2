@@ -188,7 +188,7 @@ footer {
 
 /* The media query */
 
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1080px) {
   #div1 {
     font-size: 20px;
     margin: 1% 4%;
@@ -223,16 +223,11 @@ footer {
   }
 
   #div1 {
-    font-size: 16px;
+    font-size: 18px;
     margin: 1% 4%;
-    padding-right: 50%;
+    padding-right: 45%;
   }
 
   #div2 {
-    font-size: 13px;
-    margin: 1% 8%;
-    padding-left: 45%;
-    margin-top: 15%;
-    color: black;
   }
 }
