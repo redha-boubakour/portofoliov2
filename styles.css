@@ -22,7 +22,7 @@ body {
 
 nav a {
   text-decoration: none;
-  color: #f2f3ae;
+  color: white;
   font-size: 20px;
   font-weight: bold;
   padding: 25px 20px;
@@ -58,7 +58,7 @@ section a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #f2f3ae;
+  color: white;
   text-align: center;
 }
 
@@ -68,8 +68,7 @@ section a {
   padding-right: 50%;
 }
 
-#div2,
-#div3 {
+#div2 {
   font-size: 15px;
   margin: 0.1% 10%;
   padding-left: 45%;
@@ -157,7 +156,7 @@ section img {
 }
 
 #contact a {
-  color: #f2f3ae;
+  color: white;
 }
 
 #my-medias {
@@ -182,7 +181,7 @@ footer {
   justify-content: center;
   height: 10vh;
   width: 100%;
-  color: #f2f3ae;
+  color: white;
   font-size: 20px;
   font-weight: bold;
 }
@@ -196,8 +195,7 @@ footer {
     padding-right: 50%;
   }
 
-  #div2,
-  #div3 {
+  #div2 {
     font-size: 15px;
     margin: 1% 8%;
     padding-left: 45%;
@@ -229,11 +227,11 @@ footer {
     padding-right: 50%;
   }
 
-  #div2,
-  #div3 {
-    font-size: 15px;
+  #div2 {
+    font-size: 13px;
     margin: 1% 8%;
     padding-left: 45%;
+    margin-top: 15%;
     color: black;
   }
 }
