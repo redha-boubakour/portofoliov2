@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* The navigation bar */
+
+#navbar {
+  background-color: black;
+  display: flex;
+  text-align: right;
+  position: sticky;
+  max-width: 100%;
+  height: 10vh;
+  z-index: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f2f3ae;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 25px 20px;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  margin: 12px;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+/* the sections ALL */
+
+section a {
+  text-decoration: none;
+  color: #272932;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 25px 20px;
+}
+
+/* The welcome section */
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  max-width: 100%;
+  position: relative;
+  background-image: url(./images/Backgroundcorner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #f2f3ae;
+  text-align: center;
+}
+
+#div1 {
+  font-size: 20px;
+  margin: 10% 10%;
+  padding-right: 50%;
+}
+
+#div2,
+#div3 {
+  font-size: 15px;
+  margin: 0.1% 10%;
+  padding-left: 45%;
+  color: black;
+}
+
+/* The projects section */
+
+#projects {
+  height: 100vh;
+  max-width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-areas:
+    "my-projects  my-projects"
+    "project1     project2"
+    "project3     project4";
+}
+
+section img {
+  max-width: 150px;
+  padding-right: 22px;
+}
+
+.project-tile {
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+}
+
+#my-projects {
+  grid-area: my-projects;
+}
+
+#project1 {
+  grid-area: project1;
+}
+
+#project2 {
+  grid-area: project2;
+}
+
+#project3 {
+  grid-area: project3;
+}
+
+#project4 {
+  grid-area: project4;
+}
+
+/* The contact-media section */
+
+#contact {
+  background-image: url(./images/Backgroundcornerbot.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  height: 90vh;
+  max-width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-areas:
+    "my-medias     my-medias      my-medias"
+    "    .              .           github"
+    "    .        freecodecamp        .   ";
+}
+
+.fa-free-code-camp,
+.fa-github {
+  font-size: 60px;
+  padding: 5px;
+  padding-right: 25px;
+}
+
+#contact a {
+  color: #f2f3ae;
+}
+
+#my-medias {
+  grid-area: my-medias;
+}
+
+#github {
+  grid-area: github;
+}
+
+#freecodecamp {
+  grid-area: freecodecamp;
+}
+
+/* The footer */
+
+footer {
+  background-color: black;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  color: #f2f3ae;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* The media query */
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  #div1 {
+    font-size: 25px;
+    margin: 1% 4%;
+    padding-right: 50%;
+  }
+
+  #div2,
+  #div3 {
+    font-size: 15px;
+    margin: 1% 8%;
+    padding-left: 45%;
+    color: black;
+  }
+}
+
+@media (max-width: 600px) {
+  #projects {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "my-projects"
+      "project1"
+      "project2"
+      "project3"
+      "project4";
+  }
+
+  #contact {
+    padding-right: 15px;
+  }
+
+  #div1 {
+    font-size: 20px;
+    margin: 1% 4%;
+    padding-right: 50%;
+  }
+
+  #div2,
+  #div3 {
+    font-size: 15px;
+    margin: 1% 8%;
+    padding-left: 45%;
+    color: black;
+  }
+}
