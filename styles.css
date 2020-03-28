@@ -26,6 +26,14 @@ nav a {
   font-size: 20px;
   font-weight: bold;
   padding: 25px 20px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover {
+  background: red;
+  transition: all 1.5s ease;
 }
 
 #logo {
