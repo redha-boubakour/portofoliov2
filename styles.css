@@ -253,7 +253,7 @@ footer {
 
   #contact {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 3fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
       "my-medias     my-medias      my-medias"
       "   more           more            .   "
