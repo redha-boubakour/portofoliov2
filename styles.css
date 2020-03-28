@@ -126,7 +126,7 @@ section img {
   grid-area: project4;
 }
 
-/* The contact-media section */
+/* The contact section */
 
 #contact {
   background-image: url(./images/Backgroundcornerbot.png);
@@ -140,11 +140,12 @@ section img {
   justify-content: center;
   align-items: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr 2fr;
   grid-template-areas:
     "my-medias     my-medias      my-medias"
-    "    .              .           github"
+    "   more           .               .   "
+    "     .            .             github"
     "    .        freecodecamp        .   ";
 }
 
@@ -159,8 +160,21 @@ section img {
   color: white;
 }
 
+#more a {
+  color: red;
+  font-size: initial;
+  padding: 0;
+  margin: 0;
+}
+
 #my-medias {
   grid-area: my-medias;
+  align-self: start;
+}
+
+#more {
+  grid-area: more;
+  align-self: start;
 }
 
 #github {
@@ -198,6 +212,11 @@ footer {
     margin-top: 10%;
     margin-left: 50%;
   }
+
+  #contact {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
+  }
 }
 
 @media (max-width: 500px) {
@@ -214,10 +233,6 @@ footer {
       "project4";
   }
 
-  #contact {
-    padding-right: 15px;
-  }
-
   #div1 {
     margin-right: 40%;
   }
@@ -226,5 +241,24 @@ footer {
     font-size: 12px;
     margin-top: 15%;
     margin-left: 40%;
+  }
+
+  #contact {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr 1fr;
+  }
+
+  .fa-free-code-camp,
+  .fa-github {
+    font-size: 40px;
+    padding: 0px;
+    padding-right: 20px;
+  }
+
+  #more {
+    grid-area: more;
+    align-self: start;
+    padding: 10px;
+    margin-left: 10px;
   }
 }
