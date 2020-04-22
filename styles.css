@@ -96,8 +96,8 @@ section a {
   grid-template-rows: auto 1fr 1fr;
   grid-template-areas:
     "my-projects  my-projects"
-    "project1     project2"
-    "project3     project4";
+    "project5     project4"
+    "project3     project2";
 }
 
 section img {
@@ -235,10 +235,10 @@ footer {
     grid-template-rows: auto 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "my-projects"
-      "project1"
-      "project2"
+      "project5"
+      "project4"
       "project3"
-      "project4";
+      "project2";
   }
 
   #div1 {
