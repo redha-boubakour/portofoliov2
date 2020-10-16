@@ -95,9 +95,9 @@ section a {
   grid-template-rows: auto 1fr 1fr 1fr;
   grid-template-areas:
     "my-projects  my-projects"
-    "project5     project4"
-    "project3     project2"
-    "project1        .    ";
+    "project6     project5"
+    "project4     project3"
+    "project2     project1";
 }
 
 section img {
@@ -261,6 +261,7 @@ footer {
     grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "my-projects"
+      "project6"
       "project5"
       "project4"
       "project3"
