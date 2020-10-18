@@ -249,6 +249,13 @@ footer {
 
 @media (max-width: 500px) {
 
+  #div2 {
+    font-size: 16px;
+    position: absolute;
+    margin: 45vh 10% 0 55%;
+    color: black;
+  }
+
   #projects {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
