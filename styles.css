@@ -26,7 +26,6 @@ nav a {
   font-size: 20px;
   font-weight: bold;
   padding: 25px 20px;
-  text-transform: uppercase;
   overflow: hidden;
   transition: transform 0.3s ease;
 }
@@ -71,15 +70,17 @@ section a {
 }
 
 #div1 {
+  position: absolute;
   margin-right: 60%;
   padding-left: 10%;
-  padding-top: 10%;
+  padding-top: 13vh;
 }
 
 #div2 {
+  position: absolute;
   margin-left: 60%;
   padding-right: 10%;
-  padding-top: 10%;
+  padding-top: 50vh;
   color: black;
 }
 
@@ -116,26 +117,6 @@ section img {
 
 #my-projects {
   grid-area: my-projects;
-}
-
-#project1 {
-  grid-area: project1;
-}
-
-#project2 {
-  grid-area: project2;
-}
-
-#project3 {
-  grid-area: project3;
-}
-
-#project4 {
-  grid-area: project4;
-}
-
-#project5 {
-  grid-area: project5;
 }
 
 /* The contact section */

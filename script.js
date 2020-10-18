@@ -15,3 +15,10 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+const tl = gsap.timeline({defaults: {ease: "power1.out"}});
+
+
+tl.fromTo("#div1", {opacity: 0}, {opacity: 1, duration: 3, delay: 0.5});
+tl.fromTo("#div2", {opacity: 0}, {opacity: 1, duration: 3});
+
