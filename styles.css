@@ -70,17 +70,16 @@ section a {
 }
 
 #div1 {
+  font-size: 20px;
   position: absolute;
-  margin-right: 60%;
-  padding-left: 10%;
-  padding-top: 13vh;
+  margin : 13vh 60% 0 10%;
+
 }
 
 #div2 {
+  font-size: 16px;
   position: absolute;
-  margin-left: 60%;
-  padding-right: 10%;
-  padding-top: 50vh;
+  margin: 50vh 10% 0 60%;
   color: black;
 }
 
@@ -90,24 +89,22 @@ section a {
   max-width: 100%;
   text-align: center;
   justify-content: center;
-  align-items: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
   grid-template-areas:
-    "my-projects  my-projects"
-    "project6     project5"
-    "project4     project3"
-    "project2     project1";
+    "my-projects  my-projects  my-projects"
+    "project6     project5     project4"
+    "project3     project2     project1";
+
 }
 
 section img {
   max-width: 150px;
-  padding-right: 22px;
 }
 
 .project-tile {
-  margin: 20px;
+  margin: 5% 15%;
   transition: transform 0.3s ease;
 }
 
@@ -133,17 +130,18 @@ section img {
   justify-content: center;
   align-items: center;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 2fr 2fr;
   grid-template-areas:
     "my-medias     my-medias      my-medias"
-    "   more           .               .   "
-    "     .            .             github"
-    "    .        freecodecamp        .   ";
+    "   more           .              .    "
+    "     .            .          github   "
+    "    .        freecodecamp    linkedin ";
 }
 
 .fa-free-code-camp,
-.fa-github {
+.fa-github,
+.fa-linkedin-in {
   font-size: 60px;
   padding: 5px;
   padding-right: 25px;
@@ -172,6 +170,10 @@ section img {
 
 #github {
   grid-area: github;
+}
+
+#linkedin {
+  grid-area: linkedin;
 }
 
 #freecodecamp {
@@ -208,7 +210,7 @@ footer {
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 10vh;
+  height: 75px;
   width: 100%;
   color: white;
   font-size: 20px;
@@ -218,26 +220,36 @@ footer {
 /* The media query */
 
 @media (min-width: 500px) and (max-width: 1080px) {
-  #div1 {
-    margin-right: 50%;
-  }
 
-  #div2 {
-    font-size: 14px;
-    margin-top: 10%;
-    margin-left: 50%;
+  #projects {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas:
+      "my-projects    my-projects"
+      "project6       project5"
+      "project4       project3"
+      "project2       project1";
   }
 
   #contact {
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    grid-template-areas:
+    "my-medias     my-medias      my-medias"
+    "   more           more           .    "
+    "     .            .          github   "
+    "    .        freecodecamp    linkedin";
   }
+
+  #div1, #div2 {
+    font-size: 13px;
+  }
+
 }
 
 @media (max-width: 500px) {
+
   #projects {
-    display: grid;
-    height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -250,32 +262,23 @@ footer {
       "project1";
   }
 
-  nav a {
-    font-size: 16px;
-  }
-
-  #div1 {
-    margin-right: 40%;
-  }
-
-  #div2 {
+  #div1, #div2 {
     font-size: 12px;
-    margin-top: 15%;
-    margin-left: 40%;
   }
 
   #contact {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr 1fr;
     grid-template-areas:
-      "my-medias     my-medias      my-medias"
-      "   more           more            .   "
-      "     .            .             github"
-      "    .        freecodecamp        .   ";
+    "my-medias     my-medias      my-medias"
+    "   more           more           .    "
+    "     .            .          github   "
+    "    .        freecodecamp    linkedin";
   }
 
   .fa-free-code-camp,
-  .fa-github {
+  .fa-github,
+  .fa-linkedin-in {
     font-size: 40px;
     padding: 0px;
     padding-right: 20px;
