@@ -276,7 +276,18 @@ footer {
 }
 
 @media (max-width: 650px) {
+  
+  #div1 {
+    font-size: 13px;
+    margin: 30% 5%;
+    padding-right: 5px;
+  }
 
+  #div2 {
+    font-size: 13px;
+    margin: 0;
+    padding-right: 10px;
+  }
 
   #section2 {
     grid-template-columns: 1fr;
@@ -291,11 +302,7 @@ footer {
       "project1";
   }
 
-  #div1, #div2 {
-    font-size: 13px;
-    margin: 30% 2%;
-    padding: 5%;
-  }
+
 
   #section3 {
     grid-template-columns: 1fr 1fr 1fr;
