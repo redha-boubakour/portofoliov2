@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+
 
 body {
   font-family: "Roboto", sans-serif;
@@ -11,28 +9,39 @@ body {
 /* The navigation bar */
 
 #navbar {
-  background-color: black;
   display: flex;
-  text-align: right;
   position: sticky;
-  max-width: 100%;
-  height: 75px;
+  justify-content: flex-end;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  background-color: black;
   z-index: 0;
 }
 
-nav a {
+nav button {
+  float: right;
+  display: block;
   text-decoration: none;
+  border: none;
+  background: none;
   color: white;
-  font-size: 20px;
   font-weight: bold;
-  padding: 25px 20px;
-  overflow: hidden;
+  text-align: center;
+  margin-right: 10px;
+  padding: 5px 20px;
+  font-size: 20px;
   transition: transform 0.3s ease;
 }
 
-nav a:hover {
-  background: red;
+nav button:hover {
+  background: #F0544F;
   transition: all 1.5s ease;
+}
+
+nav button:focus {
+  border: none;
+  background: #F0544F;
 }
 
 #logo {
@@ -55,61 +64,73 @@ section a {
 
 /* The welcome section */
 
-#welcome-section {
-  display: flex;
-  flex-direction: column;
-  height: 90vh;
-  max-width: 100%;
-  position: relative;
+#section1 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "div1    . "
+    "  .   div2";
   background-image: url(./images/Backgroundcorner.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  text-align: center;
+  height: 90vh;
+  max-width: 100%;
+
 }
 
 #div1 {
   font-size: 20px;
-  position: absolute;
-  margin : 13vh 60% 0 10%;
-
+  grid-area: div1;
+  padding: 15%; 
 }
 
 #div2 {
   font-size: 16px;
-  position: absolute;
-  margin: 50vh 10% 0 60%;
+  grid-area: div2; 
   color: black;
+  padding: 15%; 
+}
+
+#line1 {
+  width: 100%;
+  background: #F0544F;
+  height: 8px;
+  margin-top: 20px;
 }
 
 /* The projects section */
 
-#projects {
+#section2 {
   max-width: 100%;
   text-align: center;
-  justify-content: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr 1fr;
   grid-template-areas:
     "my-projects  my-projects  my-projects"
     "project6     project5     project4"
     "project3     project2     project1";
-
-}
-
-section img {
-  max-width: 150px;
 }
 
 .project-tile {
+  text-align: center;
+  align-items: center;
   margin: 5% 15%;
-  transition: transform 0.3s ease;
+  border: 2px solid #F0544F;
+  border-radius: 15px;
 }
 
-.project-tile:hover {
-  transform: scale(1.05);
+.project-image { padding: 10px;}
+.project-title { color: whitesmoke; background-color:#F0544F; padding: 1px; }
+.project-stack { padding: 0; }
+.project-content { padding: 0 30px; text-align: justify; }
+
+section img {
+  max-width: 150px;
 }
 
 #my-projects {
@@ -118,7 +139,7 @@ section img {
 
 /* The contact section */
 
-#contact {
+#section3 {
   background-image: url(./images/Backgroundcornerbot.png);
   background-position: center;
   background-size: cover;
@@ -127,7 +148,6 @@ section img {
   height: 90vh;
   max-width: 100%;
   text-align: center;
-  justify-content: center;
   align-items: center;
   display: grid;
   grid-template-columns: 3fr 1fr 1fr;
@@ -147,12 +167,12 @@ section img {
   padding-right: 25px;
 }
 
-#contact a {
+#section3 a {
   color: white;
 }
 
 #more a {
-  color: red;
+  color: #F0544F;
   font-size: initial;
   padding: 0;
   margin: 0;
@@ -164,8 +184,19 @@ section img {
 }
 
 #more {
+  margin: 0 40%;
   grid-area: more;
   align-self: start;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+#span2 {
+  width: 100%;
+  background: #F0544F;
+  display: block;
+  height: 8px;
+  margin-top: 20px;
 }
 
 #github {
@@ -210,7 +241,7 @@ footer {
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 75px;
+  height: 70px;
   width: 100%;
   color: white;
   font-size: 20px;
@@ -219,9 +250,9 @@ footer {
 
 /* The media query */
 
-@media (min-width: 500px) and (max-width: 1080px) {
+@media (min-width: 650px) and (max-width: 1080px) {
 
-  #projects {
+  #section2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr 1fr;
     grid-template-areas:
@@ -231,7 +262,7 @@ footer {
       "project2       project1";
   }
 
-  #contact {
+  #section3 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 2fr 1fr;
     grid-template-areas:
@@ -241,22 +272,13 @@ footer {
     "    .        freecodecamp    linkedin";
   }
 
-  #div1, #div2 {
-    font-size: 13px;
-  }
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
 
-  #div2 {
-    font-size: 16px;
-    position: absolute;
-    margin: 45vh 10% 0 55%;
-    color: black;
-  }
 
-  #projects {
+  #section2 {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -270,10 +292,10 @@ footer {
   }
 
   #div1, #div2 {
-    font-size: 12px;
+    font-size: 13px;
   }
 
-  #contact {
+  #section3 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 4fr 1fr 1fr;
     grid-template-areas:
@@ -289,12 +311,5 @@ footer {
     font-size: 40px;
     padding: 0px;
     padding-right: 20px;
-  }
-
-  #more {
-    grid-area: more;
-    align-self: start;
-    padding: 10px;
-    margin-left: 10px;
   }
 }

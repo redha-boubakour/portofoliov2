@@ -1,192 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/3f0354b14f.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>RB Portfolio</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/3f0354b14f.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>RB Portfolio</title>
+    </head>
 
-  <body>
-    <main>
-      <nav id="navbar">
-        <img id="logo" src="./images/Logo.jpg" alt="logo" />
-        <a class="nav-link" href="#">About</a>
-        <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#contact">Contact</a>
-      </nav>
+    <body>
+        <main>
+            <nav id="navbar">
+                <img id="logo" src="./images/Logo.jpg" alt="logo" />
+                <button class="nav-link" id="section1Btn">Home</button>
+                <button class="nav-link" id="section2Btn">Projects</button>
+                <button class="nav-link" id="section3Btn">Contact</button>
+            </nav>
 
-      <section id="welcome-section">
-        <div id="div1">
-          <h1>
-            Hey ! My name is Mohamed Rédha BOUBAKOUR and sooner or later, i will
-            become a web developper.
-          </h1>
-        </div>
-        <div id="div2">
-          <h1>
-            This is my Portfolio. Through him, you will understand exactly from
-            where i started.
-          </h1>
-          <h1>"A long journey" they said... They were probably right.</h1>
-        </div>
-      </section>
+            <section id="section1">
+                <div id="div1">
+                    <h1>
+                        Hey ! My name is Mohamed Rédha BOUBAKOUR and sooner or
+                        later, i will become a web developper.
+                    </h1>
+                </div>
+                <div id="div2">
+                    <h1>
+                        This is my Portfolio. Through him, you will understand
+                        exactly from where i started.
+                    </h1>
+                    <h1>
+                        "A long journey" they said... They were probably right.
+                    </h1>
+                    <p id="line1"></p>
+                </div>
+            </section>
 
-      <section id="projects">
-        <div id="my-projects">
-          <h1>My projects</h1>
-        </div>
+            <section id="section2">
+                <div id="my-projects">
+                    <h1>My projects</h1>
+                </div>
 
-        <div class="project-tile" id="project6">
-          <a
-            href="http://projet2.redha.planethoster.world/"
-            target="_blank"
-            ><img
-            src="./images/agence-immobiliere-chaletsetcaviar.png"
-            alt="Agence immobiliere"
-            />
-          </a>
-          <h4>Agence immobiliere - Chalets et Caviar</h4>
-          <h5>OpenClassrooms - Wordpress</h5>
-          <p>This was one of the projects that we needed to produce during the "Prep'Fullstack" courses. The main goal was to creat a web site for a real estate agency by using a CMS and allowing them to add, modify and delete their posts according to each user's privilege level.</p>
-        </div>
+                <div class="project-tile" id="project6">
+                    <div class="project-image">
+                        <a
+                            href="http://projet2.redha.planethoster.world/"
+                            target="_blank"
+                        >
+                            <img
+                                src="./images/agence-immobiliere-chaletsetcaviar.png"
+                                alt="Agence immobiliere"
+                            />
+                        </a>
+                    </div>
+                    <div class="project-title">
+                        <h3>Chalets et Caviar</h3>
+                    </div>
+                    <div class="project-stack">
+                        <h4>OpenClassrooms - Wordpress</h4>
+                    </div>
+                    <div class="project-content">
+                        <p>
+                            This was one of the projects that we needed to
+                            produce during the "Prep'Fullstack" courses. The
+                            main goal was to creat a web site for a real estate
+                            agency by using a CMS and allowing them to add,
+                            modify and delete their posts according to each
+                            user's privilege level.
+                        </p>
+                    </div>
+                </div>
 
-        <div class="project-tile" id="project5">
-          <a
-            href="https://redha-boubakour.github.io/HOLD_The_Game/"
-            target="_blank"
-            ><img
-              src="./images/HOLD-the-game.png"
-              alt="A pig game"
-            />
-          </a>
-          <h4>HOLD !</h4>
-          <h5>Selftaught - HTML, CSS and Javascript</h5>
-          <p>That was the first time where i was confronted to the JS world. Despite some logic here and there.. we're still on a beginner level overall.</p>
-        </div>
-        </div>
+                <div class="project-tile" id="project5">
+                    <div class="project-image">
+                        <a
+                            href="https://redha-boubakour.github.io/HOLD_The_Game/"
+                            target="_blank"
+                        >
+                            <img
+                                src="./images/HOLD-the-game.png"
+                                alt="A pig game"
+                            />
+                        </a>
+                    </div>
+                    <div class="project-title">
+                        <h3>HOLD !</h3>
+                    </div>
+                    <div class="project-stack">
+                        <h4>Selftaught - HTML, CSS and Javascript</h4>
+                    </div>
+                    <div class="project-content">
+                        <p>
+                            That was the first time where i was confronted to
+                            the JS world. Despite some logic here and there..
+                            we're still on a beginner level overall.
+                        </p>
+                    </div>
+                </div>
 
-        <div class="project-tile" id="project4">
-          <a
-            href="https://redha-boubakour.github.io/Documentation-page.github.io/"
-            target="_blank"
-            ><img
-              src="./images/documentation-page.png"
-              alt="documentation page"
-            />
-          </a>
-          <h4>A Documentation page</h4>
-          <h5>Selftaught - HTML & CSS</h5>
-          <p>Nothing much to say about this one but "practicing".</p>
-        </div>
+                <div class="project-tile" id="project4">
+                    <div class="project-image">
+                        <a
+                            href="https://redha-boubakour.github.io/Documentation-page.github.io/"
+                            target="_blank"
+                        >
+                            <img
+                                src="./images/documentation-page.png"
+                                alt="documentation page"
+                            />
+                        </a>
+                    </div>
+                    <div class="project-title">
+                        <h3>A Documentation page</h3>
+                    </div>
+                    <div class="project-stack">
+                        <h4>Selftaught - HTML & CSS</h4>
+                    </div>
+                    <div class="project-content">
+                        <p>
+                            Nothing much to say about this one but "practicing".
+                        </p>
+                    </div>
+                </div>
 
-        <div class="project-tile" id="project3">
-          <a
-            href="https://redha-boubakour.github.io/Product-landing-page.github.io/"
-            target="_blank"
-            ><img
-              src="./images/landing-page.png"
-              alt="A product landing page"
-            />
-          </a>
-            <h4>A product landing page</h4>
-            <h5>Selftaught - HTML & CSS</h5>
-            <p>This was my first shoot toward creating something that was "not that bad" visually speaking.</p>
-        </div>
+                <div class="project-tile" id="project3">
+                    <div class="project-image">
+                        <a
+                            href="https://redha-boubakour.github.io/Product-landing-page.github.io/"
+                            target="_blank"
+                        >
+                            <img
+                                src="./images/landing-page.png"
+                                alt="documentation page"
+                            />
+                        </a>
+                    </div>
+                    <div class="project-title">
+                        <h3>A product landing page</h3>
+                    </div>
+                    <div class="project-stack">
+                        <h4>Selftaught - HTML & CSS</h4>
+                    </div>
+                    <div class="project-content">
+                        <p>
+                            This was my first shoot toward creating something
+                            that was "not that bad" visually speaking.
+                        </p>
+                    </div>
+                </div>
 
-        <div class="project-tile" id="project2">
-          <a
-            href="https://redha-boubakour.github.io/survey-form.github.io/"
-            target="_blank"
-            ><img 
-              src="./images/survey-form.png" 
-              alt="A simple survey-form"
-            />
-          </a>
-          <h4>A simple survey-form</h4>
-          <h5>Selftaught - HTML & CSS</h5>
-          <p>My second one. I learned there all the basics relating to forms like the "radio" buttons, checkboxes and so on.</p>
-        </div>
+                <div class="project-tile" id="project2">
+                    <div class="project-image">
+                        <a
+                            href="https://redha-boubakour.github.io/survey-form.github.io/"
+                            target="_blank"
+                        >
+                            <img
+                                src="./images/survey-form.png"
+                                alt="documentation page"
+                            />
+                        </a>
+                    </div>
+                    <div class="project-title">
+                        <h3>A simple survey-form</h3>
+                    </div>
+                    <div class="project-stack">
+                        <h4>Selftaught - HTML & CSS</h4>
+                    </div>
+                    <div class="project-content">
+                        <p>
+                            My second one. I learned there all the basics
+                            relating to forms like the "radio" buttons,
+                            checkboxes and so on.
+                        </p>
+                    </div>
+                </div>
 
-        <div class="project-tile" id="project1">
-          <a
-            href="https://redha-boubakour.github.io/Tribute-Page.github.io/"
-            target="_blank"
-            ><img 
-              src="./images/tribute-page.png" 
-              alt="A simple survey-form"
-            />
-          </a>
-          <h4>A tribute page</h4>
-          <h5>Selftaught - HTML & CSS</h5>
-          <p>My first web page ever ! I made sure that all the mistakes that had been done were still there. In fact, i followed this logic for all my next achievements.</p>
-        </div>
-      </section>
+                <div class="project-tile" id="project1">
+                    <div class="project-image">
+                        <a
+                            href="https://redha-boubakour.github.io/Tribute-Page.github.io/"
+                            target="_blank"
+                        >
+                            <img
+                                src="./images/tribute-page.png"
+                                alt="documentation page"
+                            />
+                        </a>
+                    </div>
+                    <div class="project-title">
+                        <h3>A tribute page</h3>
+                    </div>
+                    <div class="project-stack">
+                        <h4>Selftaught - HTML & CSS</h4>
+                    </div>
+                    <div class="project-content">
+                        <p>
+                            My first web page ever ! I made sure that all the
+                            mistakes that had been done were still there. In
+                            fact, i followed this logic for all my next
+                            achievements.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-      <section id="contact">
-        <div id="my-medias">
-          <h1>Media</h1>
-        </div>
+            <section id="section3">
+                <div id="my-medias">
+                    <h1>Media</h1>
+                </div>
 
-        <div id="more">
-          <h1>Wanna know more about me ?</h1>
-          <p>
-            Here's a link to my<a id="myResume" href="#bottom"> resume. </a>You
-            can also checkout my Github profile !
-          </p>
-        </div>
-        <div id="myResumeBackground" class="modal">
-          <div class="modal-content">
-            <p>Not yet uploaded.. need to be translated in english.</p>
-          </div>
-        </div>
+                <div id="more">
+                    <h1>Wanna know more about me ?</h1>
+                    <p>
+                        Here's a link to my<a id="myResume" href="#bottom">
+                            resume. </a
+                        >You can also checkout my Github profile !
+                    </p>
+                    <span id="span2"></span>
+                </div>
 
-        <div id="github">
-          <a
-            class="link"
-            id="profile-link"
-            href="https://github.com/redha-boubakour"
-            target="_blank"
-            ><i class="fab fa-github"></i>
-            <p>My Github profile</p>
-          </a>
-        </div>
+                <div id="myResumeBackground" class="modal">
+                    <div class="modal-content">
+                        <p>
+                            Not yet uploaded.. need to be translated in english.
+                        </p>
+                    </div>
+                </div>
 
-        <div id="linkedin">
-          <a
-            class="link"
-            id="profile-link"
-            href="https://www.linkedin.com/in/mohamed-r%C3%A9dha-boubakour-27556bb0/"
-            target="_blank"
-            ><i class="fab fa-linkedin-in"></i>
-            <p>My Linkedin profile</p>
-          </a>
-        </div>
+                <div id="github">
+                    <a
+                        class="link"
+                        id="profile-link"
+                        href="https://github.com/redha-boubakour"
+                        target="_blank"
+                        ><i class="fab fa-github"></i>
+                        <p>My Github profile</p>
+                    </a>
+                </div>
 
-        <div id="freecodecamp">
-          <a
-            class="link"
-            href="https://www.freecodecamp.org/redikan"
-            target="_blank"
-            ><i class="fab fa-free-code-camp"></i>
-            <p>My FreeCodeCamp profile</p>
-          </a>
-        </div>
-      </section>
+                <div id="linkedin">
+                    <a
+                        class="link"
+                        id="profile-link"
+                        href="https://www.linkedin.com/in/mohamed-r%C3%A9dha-boubakour-27556bb0/"
+                        target="_blank"
+                        ><i class="fab fa-linkedin-in"></i>
+                        <p>My Linkedin profile</p>
+                    </a>
+                </div>
 
-      <footer>
-        MedR BOUBAKOUR &copy 2020
-      </footer>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
-      <script src="script.js"></script>
-    </main>
-  </body>
+                <div id="freecodecamp">
+                    <a
+                        class="link"
+                        href="https://www.freecodecamp.org/redikan"
+                        target="_blank"
+                        ><i class="fab fa-free-code-camp"></i>
+                        <p>My FreeCodeCamp profile</p>
+                    </a>
+                </div>
+            </section>
+
+            <footer>MedR BOUBAKOUR &copy 2020</footer>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
+            <script src="script.js"></script>
+        </main>
+    </body>
 </html>

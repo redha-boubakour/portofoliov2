@@ -16,8 +16,22 @@ window.onclick = function (event) {
   }
 };
 
-const tl = gsap.timeline({defaults: {ease: "power1.out"}});
+document.querySelectorAll("nav button").forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    gsap.to(window, {duration: 1, scrollTo:{y:"#section" + (index + 1)}});
+  });
+});
+
+var tl = gsap.timeline({defaults: {ease: "power1.out"}});
+
+tl.fromTo("#div1", {opacity: 0}, {opacity: 1, duration: 2, delay: 0.5});
+tl.fromTo("#div2", {opacity: 0}, {opacity: 1, duration: 2, delay: 1});
+tl.fromTo("#line1", {x:-600, opacity: 0}, {x:0, opacity: 1, duration: 2, delay: -1.5});
 
 
-tl.fromTo("#div1", {opacity: 0}, {opacity: 1, duration: 3, delay: 0.5});
-tl.fromTo("#div2", {opacity: 0}, {opacity: 1, duration: 3, delay: 1.5});
+
+document.querySelectorAll("nav button").forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    gsap.to(window, {duration: 1, scrollTo:{y:"#section" + (index + 1), offsetY:70}});
+  });
+});
