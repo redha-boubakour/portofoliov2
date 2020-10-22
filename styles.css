@@ -145,7 +145,7 @@ section img {
   background-size: cover;
   background-repeat: no-repeat;
   color: black;
-  height: 90vh;
+  height: 95vh;
   max-width: 100%;
   text-align: center;
   align-items: center;
@@ -241,7 +241,7 @@ footer {
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 75px;
+  height: 5vh;
   width: 100%;
   color: white;
   font-size: 20px;
@@ -271,8 +271,6 @@ footer {
     "     .            .          github   "
     "    .        freecodecamp    linkedin";
   }
-
-
 }
 
 @media (max-width: 650px) {
