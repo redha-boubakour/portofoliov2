@@ -17,7 +17,7 @@ body {
 
 }
 
-nav button {
+nav button, nav a {
   float: right;
   display: block;
   text-decoration: none;
@@ -33,7 +33,8 @@ nav button {
   transition: transform 0.3s ease;
 }
 
-button:hover {
+nav button:hover,
+nav a:hover {
   background: #F0544F;
   transition: all 1.5s ease;
 }
@@ -48,7 +49,7 @@ button:hover {
 
 /* the sections ALL */
 
-section a {
+#section3 a {
   text-decoration: none;
   color: #272932;
   font-size: 20px;
@@ -234,12 +235,22 @@ footer {
   display: flex;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 5vh;
   width: 100%;
   color: white;
   font-size: 20px;
   font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+#mentionslégales {
+  margin: 200px;
+  text-align: justify;
 }
 
 /* The media query */
