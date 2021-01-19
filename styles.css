@@ -100,15 +100,19 @@ nav a:hover {
 /* The projects section */
 
 #section2 {
-  max-width: 100%;
+  max-width: 80%;
+  font-size: 12px ;
+margin: auto;
+
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto 1fr 1fr;
   grid-template-areas:
     "my-projects  my-projects  my-projects"
-    "project6     project5     project4"
-    "project3     project2     project1";
+    "project8     project7     project6"
+    "project5     project4     project3"
+    "project2     project1        .    ";
 }
 
 .project-tile {
@@ -235,15 +239,18 @@ footer {
   display: flex;
   text-align: center;
   align-items: center;
-  justify-content: space-evenly;
-  height: 5vh;
+  justify-content: flex-start;
+
+  height: auto;
   width: 100%;
   color: white;
   font-size: 20px;
   font-weight: bold;
+  font-size: 18px ;
 }
 
 footer a {
+
   text-decoration: none;
   color: #fefefe;
 }
@@ -253,15 +260,27 @@ footer a {
   text-align: justify;
 }
 
+#copyrights {
+padding: 0 20px 0 20px;
+}
+
+#mentions{
+  padding: 0 20px 0 20px;
+}
+
+
 /* The media query */
 
 @media (min-width: 650px) and (max-width: 1080px) {
 
   #section2 {
+    max-width: 100%;
+    font-size: 14px ;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr 1fr;
     grid-template-areas:
       "my-projects    my-projects"
+      "project8       project7"
       "project6       project5"
       "project4       project3"
       "project2       project1";
@@ -293,6 +312,8 @@ footer a {
   }
 
   #section2 {
+    max-width: 100%;
+    font-size: 14px ;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -323,5 +344,10 @@ footer a {
     font-size: 40px;
     padding: 0px;
     padding-right: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    padding-bottom: 15px; 
   }
 }
