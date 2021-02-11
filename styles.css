@@ -110,9 +110,9 @@ margin: auto;
   grid-template-rows: auto 1fr 1fr;
   grid-template-areas:
     "my-projects  my-projects  my-projects"
-    "project8     project7     project6"
-    "project5     project4     project3"
-    "project2     project1        .    ";
+    "project9     project8     project7"
+    "project6     project5     project4"
+    "project3     project2     project1";
 }
 
 .project-tile {
@@ -280,10 +280,11 @@ padding: 0 20px 0 20px;
     grid-template-rows: auto 1fr 1fr;
     grid-template-areas:
       "my-projects    my-projects"
-      "project8       project7"
-      "project6       project5"
-      "project4       project3"
-      "project2       project1";
+      "project9       project8"
+      "project7       project6"
+      "project5       project4"
+      "project3       project2"
+      "project1          .    ";
   }
 
   #section3 {
@@ -318,6 +319,9 @@ padding: 0 20px 0 20px;
     grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "my-projects"
+      "project9"
+      "project8"
+      "project7"
       "project6"
       "project5"
       "project4"
